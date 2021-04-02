@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Gradient Boosting
-description: gradient boosting examle 
+description: gradient boosting example
+categories: [gradient boost]
 ---
 
 ```python
@@ -61,15 +62,15 @@ uniquex = df['happy'].unique()
 # Iterate through decision trees, each time using the residuals
 # from the previous tree as the inputs.
 for m in range(0, 101):
-    
+
     # Initialize and fit the tree. Set the max depth to 2.
     decision_tree = tree.DecisionTreeRegressor(max_depth=2)
     decision_tree.fit(X,y)
-    
+
     # Get and store predicted values.
     pred = decision_tree.predict(X)
     preds['pred{}'.format(m)] = pred
-    
+
     # Residuals.
     y = y - pred
 
@@ -79,7 +80,7 @@ for m in range(0, 101):
         labels = labels + [m]
         bestpred = preds.sum(axis=1)
         plt.plot(uniquex, np.poly1d(np.polyfit(df['happy'], bestpred, 1))(uniquex))
-       
+
 plt.legend(labels)
 plt.xlabel('Original')
 plt.ylabel('Predicted')
@@ -122,8 +123,8 @@ print('One strongish learner R^2: {}'.format(decision_tree.score(X, y)))
 
 dot_data = tree.export_graphviz(decision_tree, out_file=None,
                                 feature_names=X.columns,  
-                                filled=True) 
-graph = pydotplus.graph_from_dot_data(dot_data) 
+                                filled=True)
+graph = pydotplus.graph_from_dot_data(dot_data)
 Image(graph.create_png())  
 ```
 
