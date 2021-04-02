@@ -1,0 +1,61 @@
+---
+layout: page
+title: Docker for development on wsl2
+permalink: /portfolio/
+---
+
+Notes on docker use on development wsl2 system.
+
+I decided to use docker for a jekyll project.
+The reason is with all upgrades and gems possible conflicts management of the
+environment  becomes problematic. Moving project to another environment might be
+not that straight forward.
+
+Containerization approach.
+With docker container the whole project becomes easy manageable and reproducible.
+Plus if you have any conflicts during installation it is much easier to analyze
+the problem and resolve the conflict.
+
+My requirements to the solution:
+1. Editing project files should not change.
+2. Version control should not be affected.
+3. The whole setup should be reproducible and automated as much as possible.
+4. Jekyll should generate site and run it on local system port 400000.
+
+The first two reqrements cold be satisfied using docker option "volume".
+It allows to map local host directories to virtual directories.
+Docker volume is aka rsync in Linux.
+The third one is the key feature of the docker itself.
+The last could be done using docker parameter "port". It will map local host
+port to the application port.
+
+One additional configuration step is necessary due to default docker user.
+It is root. This is not optimal. According to best practices application will run
+on application user account only with necessary privileges.
+
+To accomplish this portable way we can place whole configuration into docker file
+
+## Dcokerfile
+FROM jekyll/jekyll
+RUN addgroup jekyll &&  \
+    adduser --ingroup jekyll --disabled-password --gecos '' jekyll && \
+    chown jekyll:jekyll /home/jekyll
+USER jekyll
+RUN mkdir -p /home/jekyll/site \
+    && chown -R jekyll:jekyll /home/jekyll/site
+VOLUME /home/jekyll/site
+WORKDIR /home/jekyll/site
+EXPOSE 4000
+RUN apk add py-pip
+RUN pip
+CMD bundle install \
+    && jekyll serve --host=0.0.0.0 --force_polling --watch
+
+Let's look into the details:
+
+
+1. Use the latest jekyll image from dockerhub
+2. Configure creation of docker container with the following arguments
+- volumes
+
+in my case the critical part happened to be gem installation
