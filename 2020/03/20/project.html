@@ -4,18 +4,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>fastpages | An easy to use blogging platform with support for Jupyter Notebooks.</title>
+<title>Why diabetic patients are readmitted? | fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="fastpages" />
+<meta property="og:title" content="Why diabetic patients are readmitted?" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://v2br.github.io/fastpages/" />
-<meta property="og:url" content="https://v2br.github.io/fastpages/" />
+<meta name="description" content="Analysis of the most important predictors for readmission based on UCI dataset" />
+<meta property="og:description" content="Analysis of the most important predictors for readmission based on UCI dataset" />
+<link rel="canonical" href="https://v2br.github.io/fastpages/2020/03/20/project.html" />
+<meta property="og:url" content="https://v2br.github.io/fastpages/2020/03/20/project.html" />
 <meta property="og:site_name" content="fastpages" />
-<meta property="og:image" content="https://v2br.github.io/fastpages/images/logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-20T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://v2br.github.io/fastpages/","@type":"WebSite","headline":"fastpages","image":"https://v2br.github.io/fastpages/images/logo.png","name":"fastpages","description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
+{"url":"https://v2br.github.io/fastpages/2020/03/20/project.html","@type":"BlogPosting","headline":"Why diabetic patients are readmitted?","dateModified":"2020-03-20T00:00:00-05:00","datePublished":"2020-03-20T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://v2br.github.io/fastpages/2020/03/20/project.html"},"description":"Analysis of the most important predictors for readmission based on UCI dataset","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://v2br.github.io/fastpages/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -67,55 +68,108 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p>This site is built with <a href="https://github.com/fastai/fastpages">fastpages</a>, An easy to use blogging platform with extra features for Jupyter Notebooks.</p>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-<p><img src="/fastpages/images/diagram.png" alt="" title="https://github.com/fastai/fastpages" /></p>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Why diabetic patients are readmitted?</h1><p class="page-description">Analysis of the most important predictors for readmission based on UCI dataset</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-03-20T00:00:00-05:00" itemprop="datePublished">
+        Mar 20, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
 
-<p><a href="https://github.com/fastai/fastpages">fastpages</a> automates the process of creating blog posts via GitHub Actions, so you don’t have to fuss with conversion scripts.  A full list of features can be found on <a href="https://github.com/fastai/fastpages">GitHub</a>.</p>
+    
 
-<h1 id="posts">Posts</h1>
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <div class="img_row">
+	<img class="col three" src="/fastpages/img/1.jpg" alt="" title="Hospital Readmission" />
+</div>
+
+<h4>
+Abstract
+</h4>
+
+<p>
+	
+## Introduction
+<p>
+
+Many hospital patients are readmitted within 30 days after discharge. Often it indicates problems with the quality of hospital care. Recently this parameter became part of the National Hospital Evaluation metric. 
+In 2014 researches of Virginia Commonwealth University used resources of Health Facts database from Center corp (major medical data hub)  and NIH grant to assemble the dataset to study readmissions especially for diabetic patients. They wanted to analyze if proper management of blood level sugar will affect readmission. 
+
+This study focussed on predcitors for term readmission (readmission in less than 30 days) for this type of patients. The result could be a useful base for deeper analysis by health care experts and machine learning specialists. 
+
+The dataset consists of  50 features and 110 observations. Each observation is one patient hospitalization record with a readmission parameter. 
+
+
+~~~~~~~~~~
+block1
+~~~~~~~~~~
+
+&gt;
+blocks
+&gt;
+Table: 
+
+|C1  |c2 |
+|--|--|
+| v1 |v2  |
+|0.04|023423423.456|
+|1.04|2.456|
+
+---
+
+1. items
+#Title1
+2. item2
+	1. itemmm
+	2. mmm
+
+
+<div class="img_row">
+	<img class="col two" src="/fastpages/img/6.jpg" alt="" title="example image" />
+	<img class="col one" src="/fastpages/img/11.jpg" alt="" title="example image" />
+</div>
+<div class="col three caption">
+	You can also have artistically styled 2/3 + 1/3 images, like these.
+</div>
+
+
+<br /><br /><br />
+list of projects for me:
+1. Easy transfer from noptebook to a publication. 
+2. How to write a project for a porfolio
+2. 
+3. tiny habits design summary: Mind map? 
 
 
 
-  
+the other summar
 
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
+The first project will be review about the suiside.
+the idea is to tell the story: i can try to use kaggle
+----------------------------------------------------------------------
 
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
 
- 
-  
 
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/fastpages/2020/03/20/project.html">
-    Why diabetic patients are readmitted?
-    </a>
-</h3><p class="post-meta-description">Analysis of the most important predictors for readmission based on UCI dataset</p><p class="post-meta">Mar 20, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/fastpages/jupyter/2020/02/20/test.html">
-    Fastpages Notebook Blog Post
-    </a>
-</h3><p class="post-meta-description">A tutorial of fastpages for Jupyter notebooks.</p><p class="post-meta">Feb 20, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/fastpages/markdown/2020/01/14/test-markdown-post.html">
-    An Example Markdown Post
-    </a>
-</h3><p class="post-meta-description">A minimal example of using markdown with fastpages.</p><p class="post-meta">Jan 14, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/fastpages/experiment%20monitor/2015/07/15/wnb.html">
-    a post with code
-    </a>
-</h3><p class="post-meta-description">an example of a blog post with some code</p><p class="post-meta">Jul 15, 2015</p>
-</li></ul>
 
-    </div>
+
+
+The code is simple. Just add a col class to your image, and another class specifying the width: one, two, or three columns wide. Here's the code for the last row of images above:
+
+	<div class="img_row">
+	  <img class="col two" src="/img/6.jpg" />
+	  <img class="col one" src="/img/11.jpg" />
+	</div>
+</p></p>
+
+  </div><a class="u-url" href="/fastpages/2020/03/20/project.html" hidden></a>
+</article>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/fastpages/"></data>
