@@ -1,0 +1,1 @@
+Sitemap: https://v2br.github.io/fastpages/sitemap.xml
