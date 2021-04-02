@@ -4,17 +4,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Search | Vadim’s notes</title>
+<title>Dataframes and pandas | Vadim’s notes</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Search" />
+<meta property="og:title" content="Dataframes and pandas" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Notes and projects" />
-<meta property="og:description" content="Notes and projects" />
-<link rel="canonical" href="https://v2br.github.io/fastpages/search/" />
-<meta property="og:url" content="https://v2br.github.io/fastpages/search/" />
+<meta name="description" content="Dataframes and pandas" />
+<meta property="og:description" content="Dataframes and pandas" />
+<link rel="canonical" href="https://v2br.github.io/fastpages/notes/2020/09/28/dataframes.html" />
+<meta property="og:url" content="https://v2br.github.io/fastpages/notes/2020/09/28/dataframes.html" />
 <meta property="og:site_name" content="Vadim’s notes" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-09-28T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://v2br.github.io/fastpages/search/","@type":"WebPage","headline":"Search","description":"Notes and projects","@context":"https://schema.org"}</script>
+{"url":"https://v2br.github.io/fastpages/notes/2020/09/28/dataframes.html","@type":"BlogPosting","headline":"Dataframes and pandas","dateModified":"2020-09-28T00:00:00-05:00","datePublished":"2020-09-28T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://v2br.github.io/fastpages/notes/2020/09/28/dataframes.html"},"description":"Dataframes and pandas","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://v2br.github.io/fastpages/feed.xml" title="Vadim's notes" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -82,17 +84,101 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <!-- adapted from https://github.com/pmarsceill/just-the-docs -->
-<script type="text/javascript" src="/fastpages/assets/js/search.js"></script>
-<script type="text/javascript" src="/fastpages/assets/js/vendor/lunr.min.js"></script>
+        <article class="post">
 
-<div class="search">
-    <div class="search-input-wrap">
-    <input type="text" class="js-search-input search-input input-block form-control" tabindex="0" placeholder="Search Vadim's notes" aria-label="Search Vadim's notes" autocomplete="off">
-    </div>
-    <br>
-    <div class="js-search-results search-results-wrap"></div>
-</div>
+  <header class="post-header">
+    <h1 class="post-title">Dataframes and pandas</h1>
+  </header>
+
+  <div class="post-content">
+    <p>Approaching the data</p>
+
+<p>The first step is to understand your data source and size.</p>
+
+<p>are you dealing with the static data? Example of static is a file somewhere.
+Dinamic could be a database table or even stream.</p>
+
+<p>Let’s start from the simplest example static datafile.
+Most common way to do it is to use pandas: - labeled, indexed two dimentional data structure.</p>
+
+<p>’’’
+import pandas as pd</p>
+
+<p>Efficient approach to readind data:
+‘’’ python
+import  subprocess as sb
+print (sb.check_output([“ls”, “-l”, “../”]).decode(“utf8”))
+‘’’</p>
+
+<p>’’’ python
+first read a few lines:</p>
+
+<p>’’’</p>
+
+<p>#———————
+do something 8/h a day  with results</p>
+<h1 id="project">project</h1>
+<p>Talk to recruiter
+#——————-
+~ 2 projects
+volunteering  15 / 20  expectation!
+————————————
+!- make it nice and publish
+data manipulation,
+#———————–
+StackOverflow
+#——————————–
+week! have something top show!
+SQL questions, test
+#—————————–
+Maintain mental health</p>
+<h1 id="very-activities--">very activities  :</h1>
+<h1 id="talk-to-people">talk to people</h1>
+<p>#—————#-   art ! —
+#</p>
+<h1 id="srochaya">srochaya</h1>
+<h1 id="drriving">drriving</h1>
+<p>#———–
+  covid  jobs !!!
+the best thing if i can do it
+#—————-&gt;–<br />
+volunteering/ project ~ 3  weeks</p>
+<blockquote>
+  <p>—&gt;
+#——————-
+COVID JOBS req:
+-&gt; vacine -&gt;
+#—</p>
+  <ul>
+    <li><a href="#feature_encoding">Feature encoding</a></li>
+    <li><a href="#Feature_Engineering">Feature engineering</a></li>
+    <li><a href="#Feature_selection">Feature selection</a></li>
+    <li><a href="#Model_building">Model building</a></li>
+    <li><a href="#Model_comparison">Model comparison</a></li>
+    <li><a href="#Model_evaluation">Model evaluation</a></li>
+    <li><a href="#Final_evaluation">Final training and performance evaluation</a></li>
+  </ul>
+</blockquote>
+
+<p>#————</p>
+
+<p>my site linked in</p>
+<blockquote>
+  <hr />
+  <ul>
+    <li>
+      <h1 id="talk-to-somebody">talk to somebody</h1>
+    </li>
+  </ul>
+</blockquote>
+
+<h2>|</h2>
+
+<p>#———————</p>
+
+  </div>
+
+</article>
 
       </div>
     </main><footer class="site-footer h-card">
