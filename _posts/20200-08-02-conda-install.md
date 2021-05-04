@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: post
 title: "Notes on installing and configuring miniconda on WSL2"
 description: "Proper conda installation without docker"
-layout: post
 toc: true
 comments: false
 hide: false
