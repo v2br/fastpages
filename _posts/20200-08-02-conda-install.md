@@ -13,8 +13,8 @@ metadata_key1: metadata_value1
 
 # Notes on installing and configuring miniconda on WSL2
 
-Make sure that you have atleast 2GB of free space for the this project
-If you install it on personal one user system 
+**Make sure that you have atleast 2GB of free space for the this project**
+
 
 ## Install miniconda
 
@@ -25,7 +25,7 @@ sudo apt-get upgrade
 sudo apt autoremove
 ```
 
-1  Download miniconda from https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
+1  Download the latest miniconda from https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
 
 
 2 You need to be on user, not a superuser account (no sudo)
