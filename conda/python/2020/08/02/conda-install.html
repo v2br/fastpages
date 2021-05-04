@@ -125,14 +125,15 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h3"><a href="#create-new-env-from-project-requrements">Create new env from project requrements</a></li>
 <li class="toc-entry toc-h3"><a href="#install-jupyter">Install Jupyter</a></li>
-<li class="toc-entry toc-h3"><a href="#set-jupiter-to-use-new-environment-and-run-jupyter">Set jupiter to use new environment and run Jupyter</a></li>
+<li class="toc-entry toc-h3"><a href="#set-jupyter-to-use-new-environment-and-run-jupyter">Set jupyter to use new environment and run Jupyter</a></li>
 <li class="toc-entry toc-h3"><a href="#delete-kernel-and-environment">Delete kernel and environment</a>
 <ul>
-<li class="toc-entry toc-h4"><a href="#delete-just-kernel">Delete just kernel</a>
-<ul>
-<li class="toc-entry toc-h5"><a href="#remove-conda-env-and--all--packages-assosiated-with-it">Remove conda env AND  all  packages assosiated with it</a></li>
+<li class="toc-entry toc-h4"><a href="#delete-just-kernel">Delete just kernel</a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h3"><a href="#releasing-memory-on-wsl2">Releasing memory on wsl2</a>
+<ul>
+<li class="toc-entry toc-h5"><a href="#remove-conda-env-and--all--packages-assosiated-with-it">Remove conda env AND  all  packages assosiated with it</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h3"><a href="#optional">Optional</a></li>
@@ -254,8 +255,8 @@ source ~/.profile</p>
 conda install -c conda-forge jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user
 </code></pre></div></div>
-<h3 id="set-jupiter-to-use-new-environment-and-run-jupyter">
-<a class="anchor" href="#set-jupiter-to-use-new-environment-and-run-jupyter" aria-hidden="true"><span class="octicon octicon-link"></span></a>Set jupiter to use new environment and run Jupyter</h3>
+<h3 id="set-jupyter-to-use-new-environment-and-run-jupyter">
+<a class="anchor" href="#set-jupyter-to-use-new-environment-and-run-jupyter" aria-hidden="true"><span class="octicon octicon-link"></span></a>Set jupyter to use new environment and run Jupyter</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ipython kernel install --user --name 
 conda install -n fun-project ipykernel
 conda update --all
@@ -271,7 +272,18 @@ You up and running!!!</p>
 <a class="anchor" href="#delete-kernel-and-environment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Delete kernel and environment</h3>
 <h4 id="delete-just-kernel">
 <a class="anchor" href="#delete-just-kernel" aria-hidden="true"><span class="octicon octicon-link"></span></a>Delete just kernel</h4>
-<p>List jupiter data directory</p>
+<p>Use GUI check on left side kernels, or top menu Kernels
+in Ijupyter there is a button shutdown</p>
+
+<h3 id="releasing-memory-on-wsl2">
+<a class="anchor" href="#releasing-memory-on-wsl2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Releasing memory on wsl2</h3>
+<p>Somehow even you shutdown jupyter wsl2 does not release memory
+Shutdown the whole w
+You can open windows shell and</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl -shutdown
+</code></pre></div></div>
+
+<p>List jupyter data directory</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter --data-dir
 </code></pre></div></div>
 <p>Find subfolder kernel and delete it.</p>
