@@ -1,14 +1,14 @@
 ---
-layout: post
 title: "Notes on installing and configuring miniconda on WSL2"
 description: "Proper conda installation without docker"
+layout: post
 toc: true
 comments: false
 hide: false
-search_exclude: true
+search_exclude: false
 categories: [conda, python]
-metadata_key1: metadata_value1
 ---
+
 
 # Notes on installing and configuring miniconda on WSL2
 
