@@ -24,21 +24,10 @@
   
     
         ,"post2": {
-            "title": "Dataframes and pandas",
-            "content": "Approaching the data . The first step is to understand your data source and size. . are you dealing with the static data? Example of static is a file somewhere. Dinamic could be a database table or even stream. . Let’s start from the simplest example static datafile. Most common way to do it is to use pandas: - labeled, indexed two dimentional data structure. . ’’’ import pandas as pd . Efficient approach to readind data: ‘’’ python import subprocess as sb print (sb.check_output([“ls”, “-l”, “../”]).decode(“utf8”)) ‘’’ . ’’’ python first read a few lines: . ’’’ . #——————— do something 8/h a day with results . project . Talk to recruiter #——————- ~ 2 projects volunteering 15 / 20 expectation! ———————————— !- make it nice and publish data manipulation, #———————– StackOverflow #——————————– week! have something top show! SQL questions, test #—————————– Maintain mental health . very activities : . talk to people . #—————#- art ! — # . srochaya . drriving . #———– covid jobs !!! the best thing if i can do it #—————-&gt;– volunteering/ project ~ 3 weeks . —&gt; #——————- COVID JOBS req: -&gt; vacine -&gt; #— . Feature encoding | Feature engineering | Feature selection | Model building | Model comparison | Model evaluation | Final training and performance evaluation | . #———— . my site linked in . . talk to somebody . | . | . #——————— .",
-            "url": "https://v2br.github.io/fastpages/notes/2020/09/28/dataframes.html",
-            "relUrl": "/notes/2020/09/28/dataframes.html",
-            "date": " • Sep 28, 2020"
-        }
-        
-    
-  
-    
-        ,"post3": {
             "title": "Docker for development on wsl2",
             "content": "Notes on docker use on development wsl2 system. . I decided to use docker for a jekyll project. The reason is with all upgrades and gems possible conflicts management of the environment becomes problematic. Moving project to another environment might be not that straight forward. . Containerization approach. With docker container the whole project becomes easy manageable and reproducible. Plus if you have any conflicts during installation it is much easier to analyze the problem and resolve the conflict. . My requirements to the solution: . Editing project files should not change. | Version control should not be affected. | The whole setup should be reproducible and automated as much as possible. | Jekyll should generate site and run it on local system port 400000. | The first two reqrements cold be satisfied using docker option “volume”. It allows to map local host directories to virtual directories. Docker volume is aka rsync in Linux. The third one is the key feature of the docker itself. The last could be done using docker parameter “port”. It will map local host port to the application port. . One additional configuration step is necessary due to default docker user. It is root. This is not optimal. According to best practices application will run on application user account only with necessary privileges. . To accomplish this portable way we can place whole configuration into docker file . Dcokerfile . FROM jekyll/jekyll RUN addgroup jekyll &amp;&amp; adduser –ingroup jekyll –disabled-password –gecos ‘’ jekyll &amp;&amp; chown jekyll:jekyll /home/jekyll USER jekyll RUN mkdir -p /home/jekyll/site &amp;&amp; chown -R jekyll:jekyll /home/jekyll/site VOLUME /home/jekyll/site WORKDIR /home/jekyll/site EXPOSE 4000 RUN apk add py-pip RUN pip CMD bundle install &amp;&amp; jekyll serve –host=0.0.0.0 –force_polling –watch . Let’s look into the details: . Use the latest jekyll image from dockerhub | Configure creation of docker container with the following arguments volumes | . | in my case the critical part happened to be gem installation .",
-            "url": "https://v2br.github.io/fastpages/portfolio/",
-            "relUrl": "/portfolio/",
+            "url": "https://v2br.github.io/fastpages/2020/08/11/docker.html",
+            "relUrl": "/2020/08/11/docker.html",
             "date": " • Aug 11, 2020"
         }
         
