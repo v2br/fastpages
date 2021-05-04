@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Docker for development on wsl2
+title: Using Docker for development on wsl2
+[docker,jekyll]
 ---
 
 Notes on docker use on development wsl2 system.
