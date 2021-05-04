@@ -9,10 +9,10 @@ search_exclude: false
 categories: [wanbi,neptune, tracking-experiments]
 ---
 
-# Approach to organizing ml projects and tracking experiments used by  Neptune and W&B (wanbi) 
+## Approach to organizing ml projects and tracking experiments used by  Neptune and W&B (wanbi) 
 
-## W&B (wanbi) source 
+### W&B (wanbi) source 
 https://wandb.ai/
 
-## Neptune source
+### Neptune source
 https://neptune.ai/blog/how-to-use-google-colab-in-machine-learning-deep-learning-projects
