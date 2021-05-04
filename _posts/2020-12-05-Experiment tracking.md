@@ -9,8 +9,9 @@ search_exclude: false
 categories: [wanbi,neptune, tracking-experiments]
 ---
 
+# Approach to organizing ml projects and tracking experiments used by  Neptune and W&B (wanbi) 
 
-## W&B source 
+## W&B (wanbi) source 
 https://wandb.ai/
 
 ## Neptune source
