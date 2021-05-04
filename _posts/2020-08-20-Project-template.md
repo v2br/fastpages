@@ -8,3 +8,14 @@
 - author: Vadim 
 - categories: [pandas, data-analysis]
 
+Example of a default project setup 
+
+## Goal 
+## Environment 
+
+## test  before start 
+
+```shell 
+
+
+```
