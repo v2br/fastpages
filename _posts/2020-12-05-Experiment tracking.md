@@ -1,5 +1,5 @@
 ---
-title: "ML projects organizing and tracking
+title: "ML projects organizing and tracking"
 description: "Tracking experiments with wanbi or neptune"
 layout: post
 toc: false
