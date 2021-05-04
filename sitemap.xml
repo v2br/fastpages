@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://v2br.github.io/fastpages/jupyter/2020/02/20/test.html</loc>
-<lastmod>2020-02-20T00:00:00-06:00</lastmod>
-</url>
-<url>
 <loc>https://v2br.github.io/fastpages/gradient%20boost/2020/02/28/gradient-boost.html</loc>
 <lastmod>2020-02-28T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://v2br.github.io/fastpages/2020/03/20/project.html</loc>
-<lastmod>2020-03-20T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://v2br.github.io/fastpages/portfolio/</loc>
@@ -23,6 +15,10 @@
 <url>
 <loc>https://v2br.github.io/fastpages/visuals/jupyter/2020/11/01/Std_sns_visuals.html</loc>
 <lastmod>2020-11-01T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://v2br.github.io/fastpages/2021/05/03/Diabetic-readmisson-analysis.html</loc>
+<lastmod>2021-05-03T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://v2br.github.io/fastpages/about/</loc>
