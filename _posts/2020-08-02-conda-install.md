@@ -115,7 +115,7 @@ conda install -c conda-forge nodejs=14.14
 conda install -c conda-forge jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user
 ```
-### Set jupiter to use new environment and run Jupyter
+### Set jupyter to use new environment and run Jupyter
 ```
 ipython kernel install --user --name 
 conda install -n fun-project ipykernel
@@ -130,7 +130,18 @@ You up and running!!!
 
 ### Delete kernel and environment 
 #### Delete just kernel 
-List jupiter data directory 
+Use GUI check on left side kernels, or top menu Kernels
+in Ijupyter there is a button shutdown
+
+### Releasing memory on wsl2 
+Somehow even you shutdown jupyter wsl2 does not release memory
+Shutdown the whole w
+You can open windows shell and
+```
+wsl -shutdown
+```
+
+List jupyter data directory 
 ```
 jupyter --data-dir
 ```
