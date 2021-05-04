@@ -9,7 +9,6 @@ search_exclude: false
 categories: [conda, python]
 ---
 
-
 # Notes on installing and configuring miniconda on WSL2
 
 **Make sure that you have atleast 2GB of free space for the this project**
@@ -210,7 +209,6 @@ Use Remote Desktop Connection with your <IP Address>:3388
 * [ Microsoft WSL2] https://devblogs.microsoft.com/commandline/author/crloewenmicrosoft-com/* [WSL2 docs] https://docs.microsoft.com/en-us/windows/wsl/
 * [Jupyter & Visual Studio ] https://code.visualstudio.com/docs/python/jupyter-support
 * 
-
 
 #---------------------------------------------
 
