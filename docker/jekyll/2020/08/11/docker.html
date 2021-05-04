@@ -93,7 +93,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -146,21 +146,21 @@ on application user account only with necessary privileges.</p>
 <p>To accomplish this portable way we can place whole configuration into docker file</p>
 
 <h2 id="dcokerfile">Dcokerfile</h2>
-<p>FROM jekyll/jekyll
-RUN addgroup jekyll &amp;&amp;  <br />
-    adduser –ingroup jekyll –disabled-password –gecos ‘’ jekyll &amp;&amp; <br />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM jekyll/jekyll
+RUN addgroup jekyll &amp;&amp;  \
+    adduser --ingroup jekyll --disabled-password --gecos '' jekyll &amp;&amp; \
     chown jekyll:jekyll /home/jekyll
 USER jekyll
-RUN mkdir -p /home/jekyll/site <br />
+RUN mkdir -p /home/jekyll/site \
     &amp;&amp; chown -R jekyll:jekyll /home/jekyll/site
 VOLUME /home/jekyll/site
 WORKDIR /home/jekyll/site
 EXPOSE 4000
 RUN apk add py-pip
 RUN pip
-CMD bundle install <br />
-    &amp;&amp; jekyll serve –host=0.0.0.0 –force_polling –watch</p>
-
+CMD bundle install \
+    &amp;&amp; jekyll serve --host=0.0.0.0 --force_polling --watch
+</code></pre></div></div>
 <p>Let’s look into the details:</p>
 
 <ol>
@@ -172,7 +172,42 @@ CMD bundle install <br />
   </li>
 </ol>
 
-<p>in my case the critical part happened to be gem installation</p>
+<p>In my case the critical part happened to be gem installation</p>
+
+<h2 id="jekyll-plugins-install">Jekyll plugins install</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build -t getting-started .
+docker run -dp 3000:3000 getting-started
+#--------------------------------------------------
+Gems file 
+source 'https://rubygems.org'
+
+group :jekyll_plugins do
+    gem 'jekyll', '~&gt;3.0'
+    gem 'kramdown'
+    gem 'rdiscount'
+    gem 'jekyll-sitemap'
+    gem 'jekyll-redirect-from'
+end
+
+</code></pre></div></div>
+
+<h2 id="dockeriser-python-install">Dockeriser Python install</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker pull continuumio/conda-ci-linux-64-python3.8
+
+</code></pre></div></div>
+
+<h2 id="sources">Sources</h2>
+<ul>
+  <li>
+    <p><a href="https://towardsdatascience.com/conda-pip-and-docker-ftw-d64fe638dc45">Conda pip and docker</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/BretFisher/jekyll-serve">Jekyll in a Docker Container</a></p>
+  </li>
+  <li>
+    <p><a href="https://medium.com/@sebagomez/installing-the-docker-client-on-ubuntus-windows-subsystem-for-linux-612b392a44c4">Installing the docker client on linux =windows-subsystem (WSL2)</a></p>
+  </li>
+</ul>
 
   </div><a class="u-url" href="/fastpages/docker/jekyll/2020/08/11/docker.html" hidden></a>
 </article>
