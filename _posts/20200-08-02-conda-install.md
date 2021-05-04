@@ -1,10 +1,10 @@
 ---
+layout: page
 title: "Notes on installing and configuring miniconda on WSL2"
 description: "Proper conda installation without docker"
 layout: post
 toc: true
 comments: false
-image: images/conda-install/your_image.png
 hide: false
 search_exclude: true
 categories: [conda, python]
