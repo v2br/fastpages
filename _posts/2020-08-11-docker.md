@@ -16,10 +16,10 @@ Plus if you have any conflicts during installation it is much easier to analyze
 the problem and resolve the conflict.
 
 My requirements to the solution:
-1. Editing project files should not change.
+1. Editing project files should not change the setup.
 2. Version control should not be affected.
 3. The whole setup should be reproducible and automated as much as possible.
-4. Jekyll should generate site and run it on local system port 400000.
+4. Jekyll should generate site and run it on local system port 4000.
 
 The first two reqrements cold be satisfied using docker option "volume".
 It allows to map local host directories to virtual directories.
