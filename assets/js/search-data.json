@@ -35,10 +35,10 @@
   
     
         ,"post3": {
-            "title": "Experiment tracking",
-            "content": "“Tracking model evaluation and experiments results” . “Evaluating W&amp;B andf neptune approach” . toc:true | branch: master | badges: true | comments: true | author: Vadim | categories: [model-evaluation,experiments, w&amp;b, neptune] | .",
-            "url": "https://v2br.github.io/fastpages/2020/12/05/Experiment-tracking.html",
-            "relUrl": "/2020/12/05/Experiment-tracking.html",
+            "title": "ML projects organizing and tracking",
+            "content": "Approach to organizing ml projects and tracking experiments used by Neptune and W&amp;B (wanbi) . W&amp;B (wanbi) source . https://wandb.ai/ . Neptune source . https://neptune.ai/blog/how-to-use-google-colab-in-machine-learning-deep-learning-projects .",
+            "url": "https://v2br.github.io/fastpages/wanbi/neptune/tracking-experiments/2020/12/05/Experiment-tracking.html",
+            "relUrl": "/wanbi/neptune/tracking-experiments/2020/12/05/Experiment-tracking.html",
             "date": " • Dec 5, 2020"
         }
         
