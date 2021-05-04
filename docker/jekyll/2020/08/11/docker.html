@@ -4,18 +4,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Vadim’s notes | Notes and projects</title>
+<title>Using Docker for development on wsl2 | Vadim’s notes</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Vadim’s notes" />
+<meta property="og:title" content="Using Docker for development on wsl2" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Notes and projects" />
-<meta property="og:description" content="Notes and projects" />
-<link rel="canonical" href="https://v2br.github.io/fastpages/" />
-<meta property="og:url" content="https://v2br.github.io/fastpages/" />
+<meta name="description" content="Notes on docker use for development on WSl2 system." />
+<meta property="og:description" content="Notes on docker use for development on WSl2 system." />
+<link rel="canonical" href="https://v2br.github.io/fastpages/docker/jekyll/2020/08/11/docker.html" />
+<meta property="og:url" content="https://v2br.github.io/fastpages/docker/jekyll/2020/08/11/docker.html" />
 <meta property="og:site_name" content="Vadim’s notes" />
-<meta property="og:image" content="https://v2br.github.io/fastpages/images/logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-11T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://v2br.github.io/fastpages/","@type":"WebSite","headline":"Vadim’s notes","image":"https://v2br.github.io/fastpages/images/logo.png","name":"Vadim’s notes","description":"Notes and projects","@context":"https://schema.org"}</script>
+{"url":"https://v2br.github.io/fastpages/docker/jekyll/2020/08/11/docker.html","@type":"BlogPosting","headline":"Using Docker for development on wsl2","dateModified":"2020-08-11T00:00:00-05:00","datePublished":"2020-08-11T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://v2br.github.io/fastpages/docker/jekyll/2020/08/11/docker.html"},"description":"Notes on docker use for development on WSl2 system.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://v2br.github.io/fastpages/feed.xml" title="Vadim's notes" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -83,92 +84,98 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><h1 id="posts">Posts</h1>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Using Docker for development on wsl2</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-08-11T00:00:00-05:00" itemprop="datePublished">
+        Aug 11, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/fastpages/categories/#docker">docker</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/fastpages/categories/#jekyll">jekyll</a>
+        
+      
+      </p>
+    
 
-  
+    </header>
 
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Notes on docker use for development on WSl2 system.</p>
 
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
+<p>I decided to use docker for a jekyll project.
+The reason is with all upgrades and gems possible conflicts management of the
+environment  becomes problematic. Moving project to another environment might be
+not that straight forward.</p>
 
- 
-  
+<p>Containerization approach.
+With docker container the whole project becomes easy manageable and reproducible.
+Plus if you have any conflicts during installation it is much easier to analyze
+the problem and resolve the conflict.</p>
 
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-8 d-table-cell p-3">
-        <h3>
-          <a class="post-link" href="/fastpages/jupyter/supervised%20learning/2021/05/03/Diabetic-readmisson-analysis.html">
-            Analysis of readmissions diabetic patiens
-          </a>
-        </h3>
-        <p class="post-meta-description">Why diabetic patients are readmitted? What is the most important prector?</p>
-          <p class="post-meta">May 3, 2021</p>
-      </div>
-  </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-8 d-table-cell p-3">
-        <h3>
-          <a class="post-link" href="/fastpages/2021/05/03/DeepReamt.html">
-            Title
-          </a>
-        </h3>
-        <p class="post-meta-description"></p>
-          <p class="post-meta">May 3, 2021</p>
-      </div>
-  </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-8 d-table-cell p-3">
-        <h3>
-          <a class="post-link" href="/fastpages/pandas/data-analysis/2021/05/03/ComprehensiveDataExploration.html">
-            Comprehesive data Exploration
-          </a>
-        </h3>
-        <p class="post-meta-description">Initial data analysis example usiang pandas</p>
-          <p class="post-meta">May 3, 2021</p>
-      </div>
-  </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-8 d-table-cell p-3">
-        <h3>
-          <a class="post-link" href="/fastpages/2020/12/05/Experiment-tracking.html">
-            Experiment tracking
-          </a>
-        </h3>
-        <p class="post-meta-description"></p>
-          <p class="post-meta">Dec 5, 2020</p>
-      </div>
-  </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-8 d-table-cell p-3">
-        <h3>
-          <a class="post-link" href="/fastpages/visuals/jupyter/2020/11/01/sns_visuals.html">
-            Visualization using seaborn
-          </a>
-        </h3>
-        <p class="post-meta-description">Datavisualization for initial data analysis</p>
-          <p class="post-meta">Nov 1, 2020</p>
-      </div>
-  </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-8 d-table-cell p-3">
-        <h3>
-          <a class="post-link" href="/fastpages/shell/project/2020/08/20/Project-template.html">
-            Default initial configuration for a project
-          </a>
-        </h3>
-        <p class="post-meta-description">Install and initalize a template for a project</p>
-          <p class="post-meta">Aug 20, 2020</p>
-      </div>
-  </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-8 d-table-cell p-3">
-        <h3>
-          <a class="post-link" href="/fastpages/docker/jekyll/2020/08/11/docker.html">
-            Using Docker for development on wsl2
-          </a>
-        </h3>
-        <p class="post-meta-description"></p>
-          <p class="post-meta">Aug 11, 2020</p>
-      </div>
-  </div></li></ul>
+<p>My requirements to the solution:</p>
+<ol>
+  <li>Editing project files should not change the setup.</li>
+  <li>Version control should not be affected.</li>
+  <li>The whole setup should be reproducible and automated as much as possible.</li>
+  <li>Jekyll should generate site and run it on local system port 4000.</li>
+</ol>
 
-    </div>
+<p>The first two reqrements cold be satisfied using docker option “volume”.
+It allows to map local host directories to virtual directories.
+Docker volume is aka rsync in Linux.
+The third one is the key feature of the docker itself.
+The last could be done using docker parameter “port”. It will map local host
+port to the application port.</p>
+
+<p>One additional configuration step is necessary due to default docker user.
+It is root. This is not optimal. According to best practices application will run
+on application user account only with necessary privileges.</p>
+
+<p>To accomplish this portable way we can place whole configuration into docker file</p>
+
+<h2 id="dcokerfile">Dcokerfile</h2>
+<p>FROM jekyll/jekyll
+RUN addgroup jekyll &amp;&amp;  <br />
+    adduser –ingroup jekyll –disabled-password –gecos ‘’ jekyll &amp;&amp; <br />
+    chown jekyll:jekyll /home/jekyll
+USER jekyll
+RUN mkdir -p /home/jekyll/site <br />
+    &amp;&amp; chown -R jekyll:jekyll /home/jekyll/site
+VOLUME /home/jekyll/site
+WORKDIR /home/jekyll/site
+EXPOSE 4000
+RUN apk add py-pip
+RUN pip
+CMD bundle install <br />
+    &amp;&amp; jekyll serve –host=0.0.0.0 –force_polling –watch</p>
+
+<p>Let’s look into the details:</p>
+
+<ol>
+  <li>Use the latest jekyll image from dockerhub</li>
+  <li>Configure creation of docker container with the following arguments
+    <ul>
+      <li>volumes</li>
+    </ul>
+  </li>
+</ol>
+
+<p>in my case the critical part happened to be gem installation</p>
+
+  </div><a class="u-url" href="/fastpages/docker/jekyll/2020/08/11/docker.html" hidden></a>
+</article>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/fastpages/"></data>

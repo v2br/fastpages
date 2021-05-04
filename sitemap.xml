@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://v2br.github.io/fastpages/2020/08/11/docker.html</loc>
+<loc>https://v2br.github.io/fastpages/docker/jekyll/2020/08/11/docker.html</loc>
 <lastmod>2020-08-11T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://v2br.github.io/fastpages/shell/project/2020/08/20/Project-template.html</loc>
+<lastmod>2020-08-20T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://v2br.github.io/fastpages/visuals/jupyter/2020/11/01/sns_visuals.html</loc>
 <lastmod>2020-11-01T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://v2br.github.io/fastpages/2020/12/05/Experiment-tracking.html</loc>
+<lastmod>2020-12-05T00:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>https://v2br.github.io/fastpages/pandas/data-analysis/2021/05/03/ComprehensiveDataExploration.html</loc>
+<lastmod>2021-05-03T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://v2br.github.io/fastpages/2021/05/03/DeepReamt.html</loc>
+<lastmod>2021-05-03T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://v2br.github.io/fastpages/jupyter/supervised%20learning/2021/05/03/Diabetic-readmisson-analysis.html</loc>
