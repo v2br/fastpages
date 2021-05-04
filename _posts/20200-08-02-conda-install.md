@@ -1,10 +1,9 @@
 ---
 title: "Notes on installing and configuring miniconda on WSL2"
-description: "Proper conda installation without docker"
+description: "Proper conda installation"
 layout: post
 toc: true
 comments: false
-hide: false
 search_exclude: false
 categories: [conda, python]
 ---
